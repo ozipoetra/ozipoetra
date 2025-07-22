@@ -1,14 +1,7 @@
 {
     "image": "ubuntu:latest",
-    "overrideCommand": false,
-    "shutdownAction": "none",
-    "init": true,
-    "privileged": true,
     "runArgs": [ "--privileged", "--device=/dev/kvm", "--device=/dev/net/tun", "--cap-add=SYS_ADMIN", "--shm-size=2048m" ],
     "features": {
       "ghcr.io/devcontainers/features/sshd:1": {}
-    },
-    "containerEnv": {
-      "example_env": "neko"
     }
 }
